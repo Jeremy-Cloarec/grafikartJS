@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grafikart_Les variables</title>
 
     <script>
 
@@ -39,12 +39,14 @@ J'apprends le code avec Grafikart`
          //concaténation de chaînes de caractères avec espace : d + ' ' + e  dans la console
 
         //BOOLEENS : true/false
+
         let isMajeur = false
         isMajeur=true
         isMajeur=null //rien à mettre dedans 
         isMajeur=undefined //pas été définie : par défaut si on ne remplit pas la variable
 
         //TABLEAUX
+
         //peut avoir psrs valeurs et même comporter un tableau
         let notes = [13,14,8, "Hey comment ça va?", [8,4,5], 9]
 
@@ -54,6 +56,7 @@ J'apprends le code avec Grafikart`
         //changer une valeur dans le tableau : notes[3]=23
 
         //OBJETS
+
         //Déclarer la variable, puis ses clés (même contraintes que pour les variables) et leurs valeurs
         let person = {
             firstname:"John",
@@ -66,10 +69,6 @@ J'apprends le code avec Grafikart`
             }
         }
 
-        console.log(b)
-    
-
-
         // Pour récupérer une clé : 
         // person.firstname = "John"
         // person.job.name = "informaticien"
@@ -78,25 +77,45 @@ J'apprends le code avec Grafikart`
         //person.job.name="Développeur"
 
         //Autre manière de récupérer une clé : 
+        //person["firstname"]
+        
+        //Pour connaître le type d'une variable : typeof nomvaribale
+
+        //Pour connaître le nombre d'élé dans un tableau : nomVariable.lenght ; compte aussi le nbre d'élé dans une string. 
+        //EX : notes.lenght = 6
 
 
+        //OPERATIONS
+
+        //multiplier : > 2*3 < 6
+
+        //additionner : > 2+3 < 5
+        // > 2+"3" <23
+
+        //diviser > 2:3 <0.6666 
+        // > 16 % 2 < 0
+
+        //opération plus complexes: 
+        // > 2* (2+2) <8
 
 
+        //COMMENT SONT PASSEES LES VARIABLES ?
 
+        let un = "Salut"
+        let deux = un 
+        deux = "Coucou"
 
+        //Les deux valeurs sont différentes
 
+        let notes2 = notes
 
+        //si on change la valeur d'une entrée dans notes elle est aussi modifiée dans notes2, et vice-versa
 
+        notes[2]=3
 
-
-
-
-
-
+        notes2[2]=10
     </script>
-
-
-
+    
 </head>
 <body>
 </body>
