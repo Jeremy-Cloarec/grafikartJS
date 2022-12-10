@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        const a = 3; //Variable qui ne peut pas être  modifiée
+        let b = 3;//Quand les variables changent
+        b = 4;
+        var c = 4; //équivaut à un let, plus utilisé. Si on ne déclare pas variable, comme si on déclare var. 
+        //Conseil : const partout, puis on change en let si besoin
+
+        //VALEURS
+
+        //Nombres entiers, à virgules 
+        let aa = 0.12;
+
+        //CHAINE DE CARACTERES
+        aa = "Hello" 
+
+        //guillemet dans la chaîne de caractère
+        aa = "Hello aujourd\"hui"  
+
+        //aller à la ligne 
+        aa = "Aujoud'hui\nj'apprends le code" 
+
+        //aller à la ligne en utilisant les backtick
+        aa = `Aujourd'hui,
+J'apprends le code avec Grafikart`
+
+        //concaténation de chaînes de caractères : d + e dans la console
+        const d = 'Coucou'
+        const e = 'Les gens'
+        
+         //concaténation de chaînes de caractères avec espace : d + ' ' + e  dans la console
+
+        //BOOLEENS : true/false
+        let isMajeur = false
+        isMajeur=true
+        isMajeur=null //rien à mettre dedans 
+        isMajeur=undefined //pas été définie : par défaut si on ne remplit pas la variable
+
+        //TABLEAUX
+        //peut avoir psrs valeurs et même comporter un tableau
+        let notes = [13,14,8, "Hey comment ça va?", [8,4,5], 9]
+
+        //pour récupérer une valeur dans le tableux, indiquer son index en commmençant par 0. 
+        //Ex : notes[3] = "Hey comment ça va ?"
+        //tableau dans le tableau : notes[4][2]
+        //changer une valeur dans le tableau : notes[3]=23
+
+        //OBJETS
+        //Déclarer la variable, puis ses clés (même contraintes que pour les variables) et leurs valeurs
+        let person = {
+            firstname:"John",
+            lastname:"Doe",
+            age:24,
+            notes:[12,14,16],
+            job: {
+                name:"informaticien",
+                hours:35,
+            }
+        }
+        // Pour récupérer une clé : 
+        // person.firstname = "John"
+        // person.job.name = "informaticien"
+
+        //Pour changer la valeur d'une clé : 
+        //person.job.name="Développeur"
+
+        //Autre manière de récupérer une clé : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+</body>
+</html>
