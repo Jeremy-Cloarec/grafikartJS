@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions</title>
+    <script>
+
+        // > 4 == "4" < true car valeurs égales
+        // > 4 === "4" < false car pas identiques
+        // > [] == [] < false car ce sont deux objets qui sont différents (pareils pour les objets)
+        // !== différent de 
+        // Pour inverser une condition metttre ! devant
+        // > !true >false
+
+        // vrai et vrai = vrai
+        // vrai et faux = faux
+        // faux et faux = faux
+
+        //vrai ou faux = vrai
+        //vrai ou vrai = vrai
+        //faux ou faux = vrai
+
+        let age = 18
+
+        if (age < 18){
+            console.log("Vous n'avez pas 18 ans")
+        }
+
+        if (age === 18){
+            console.log("Bravo !!")
+        }
+
+        if (age) {
+            console.log("Bonjour")
+        }
+
+        age = 18
+        let pays = "FR"
+
+        if (
+            (pays === "FR" && age >=18)||
+            (pays === "US" && age >=16)
+            ){
+            console.log("Vous avez le droit de conduire")
+        }
+
+        const peutConduireFrance = pays === "FR" && age >=18
+        const peutConduireUS = pays === "US" && age >=16
+
+        if(peutConduireFrance) {
+            console.log("Vous pouvez conduire France !!")
+        } else if (peutConduireUS){
+            console.log("Vous pouvez conduire aux US !!")
+        } else {
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+
+        //AUTRE MANIERE D ECRIRE DES CONDITION : SWITCH
+        //Pas trop utilisée, utile pour comparer une variable à plusiers valeurs
+
+        const country = "FR"
+
+        switch (country) {
+
+            case "FR":
+                console.log("Je suis en France")
+                break
+            case "US": 
+                console.log ("Je suis aux Etats-Unis")
+                break
+            default: 
+                console.log("Je suis dans un pays inconnu")
+        }
+
+        //EXERCICES
+
+        //Consigne : Service de streaming qui n'a que 3 film : 1) Matrix  2) 3) Si moins 13 ans : Entre 13 et 18 ans : Plus de 18 ans
+
+        //Demander âge de quelqu'un : 
+        
+        const ag = prompt("Quel est votre âge ?")
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
