@@ -20,13 +20,36 @@
     <script>
         //permet de répéter un code un certain nombre de fois en fonction de conditions. 
 
-        //Boucle Tant que
+        //Boucle Tant que. La plus simple mais aussi la plus dangereuse car on peut rapidement planter le navigateur. 
         //répéter boucle tant qu'une condition n'est pas vérifiée
 
         let i = 0;
-        while (i=10){
-            
+        while (i <10) {
+            console.log("Bonjour" + i)//les boucles s'affichent
+            i = i + 1 
         }
+
+        //Bouvcle for
+
+        for (let p =0; p < 10; p = p + 1){ //On peut aussi écire p++ pour ajouter un à la variable. 
+            console.log("BonjourDeux")
+        }
+
+        //Peut être utilisée pour parcourir un tableau de notes
+
+        const notes = [12,13,16,8,5]
+        for (let n = 0; n < notes.length; n++){
+            console.log("BonjourTrois")
+        }
+        //accéder aux notes du tableau
+
+        for (let n = 0; n < notes.length; n++){
+            console.log(notes[n])
+        }
+
+
+
+
 
 
 
