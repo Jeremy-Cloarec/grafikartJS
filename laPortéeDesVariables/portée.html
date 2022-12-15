@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La potée des variables</title>
+    
+</head>
+<body>
+    <header>
+        <h1>La portée des variables</h1>
+    </header>
+    <style>
+        body{
+            background-color: rgb(6, 4, 10);
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <script>
+        let age = 18
+        if (age>=18){
+            let suffix = "hello"
+            console.log(suffix) //la variable suffix est déclarée uniquement à l'intérieur de ce bloc. Elle n'est accessible que dans le bloc courant et enfant mais pas dans le bloc parent.
+        }
+        
+        //var = ont une portée beaucoup plus grande, pa limitée à leur bloc. 
+        
+    </script>
+    
+</body>
+</html>

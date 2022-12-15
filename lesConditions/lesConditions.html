@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les conditions</title>
+ 
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(6, 4, 10);
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <header>
+        <h1>Les conditions</h1>
+    </header>
+   
     <script>
 
         // > 4 == "4" < true car valeurs égales
@@ -50,7 +65,7 @@
         const peutConduireUS = pays === "US" && age >=16
 
         if(peutConduireFrance) {
-            console.log("Vous pouvez conduire France !!")
+            console.log("Vous pouvez conduire en France !!")
         } else if (peutConduireUS){
             console.log("Vous pouvez conduire aux US !!")
         } else {
@@ -96,7 +111,6 @@
         const years=2022
         const birthyears = prompt("Quel est votre âge ?")
         const ageYears = years - birthyears
-
         if (ageYears < 13) {
             console.log("Vous pouvez regarder Némo") 
         }else if (ageYears < 18) {
@@ -124,8 +138,5 @@
             console.log(`${nombreUn}*${nombreDeux}=${finalNumber} est ${signe}`)
         }
     </script>
-</head>
-<body>
-    
 </body>
 </html>
