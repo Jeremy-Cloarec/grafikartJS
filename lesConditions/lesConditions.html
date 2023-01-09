@@ -35,7 +35,7 @@
 
         //vrai ou faux = vrai
         //vrai ou vrai = vrai
-        //faux ou faux = vrai
+        //faux ou faux = faux
 
         let age = 18
 
@@ -97,11 +97,12 @@
 
         //Demander âge de quelqu'un : 
         
-        const ag = prompt("Quel est votre âge ?")
+        // const ag = prompt("Quel est votre âge ?")
+		const ag = 12
         if (ag<13) {
             console.log("Vous pouvez regarder Némo") 
         }else if (ag>13 && ag<18) {
-            console.log("Vous ^pouvez regarder Matrix")
+            console.log("Vous pouvez regarder Matrix")
         }else{
             console.log("Vous pouvez regarder Django")
         }
@@ -109,7 +110,8 @@
         //Variante
 
         const years=2022
-        const birthyears = prompt("Quel est votre âge ?")
+        // const birthyears = prompt("Quel est votre âge ?")
+		const birthyears = 2020
         const ageYears = years - birthyears
         if (ageYears < 13) {
             console.log("Vous pouvez regarder Némo") 
@@ -123,12 +125,14 @@
 
         //Consigne : Demander deux nombres à l'utilisateur. Ensuite afficher nombreA x nombreB puis afficher la valeur E et préciser si elle est positive ou négative. 
 
-        const nombreUn = prompt("Quel est votre premier nombre ?")
-        const nombreDeux = prompt("Quel est votre deuxième nombre ?")
+        // const nombreUn = prompt("Quel est votre premier nombre ?")
+        // const nombreDeux = prompt("Quel est votre deuxième nombre ?")
+		const nombreUn = 34
+		const nombreDeux = 2
         const finalNumber = nombreUn * nombreDeux
         let signe 
         if (isNaN(finalNumber)){
-            console.log(`Opération impossible: ${nombreUn}*${nombreDeux}`)
+            console.log(`Opération impossible: ${nombreUn}* ${nombreDeux}`)
         } else {
             if (finalNumber >= 0){
                 signe = "positif"
